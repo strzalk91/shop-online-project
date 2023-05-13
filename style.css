@@ -23,6 +23,7 @@ header {
 .header-title {
   display: flex;
   align-items: center;
+  font-size: 40px;
 }
 .header-title span:first-child {
   color: red;
@@ -67,6 +68,10 @@ header {
   font-size: 20px;
   font-weight: 500;
   gap: 5px; /*odsuwa elementy*/
+}
+
+.cart {
+  font-size: 25px;
 }
 
 .categories {
@@ -119,7 +124,7 @@ header {
 }
 
 .product-item {
-  max-width: 450px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -183,4 +188,50 @@ header {
 
 .product-item.on-sale .price-sale {
   display: block;
+}
+.add-to-cart {
+  background: black;
+  color: white;
+  width: 60%;
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  color: red;
+}
+
+@media only screen and (min-width: 1300px) {
+  .container {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .categories-item {
+    flex-direction: column;
+  }
+  .categories {
+    margin-left: 50px;
+    margin-top: 50px;
+    border-right: 1px solid rgb(73, 72, 72);
+    min-width: 350px;
+  }
+  .categories-item button {
+    padding: 10px 40px;
+    border-radius: 5px;
+  }
+  .categories-title {
+    background: red;
+    width: 100%;
+    text-align: center;
+    padding: 6px;
+  }
+  .products {
+    margin-left: 15px;
+  }
 }
