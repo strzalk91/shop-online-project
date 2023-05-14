@@ -18,6 +18,7 @@ header {
   color: white;
   display: flex; /*umieszcza wszystko po bokach*/
   padding: 30px 50px;
+  flex-wrap: wrap;
 }
 
 .header-title {
